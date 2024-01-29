@@ -49,14 +49,15 @@
                 <a class="nav-link" href="#about">Sobre mí</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#habilidades">Habilidades</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#formacion">Formación academica</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#proyectos">Proyectos</a>
-              </li>
+              
               <!--
               <li class="nav-item">
                 <a class="nav-link" href="#contacto">Contacto</a>
@@ -85,25 +86,76 @@
     </section>
 
     <!-- Acerca de mí-->
-    <section class="py-5" id="about">
+    <section class="py-3" id="about">
       <div class="container about">
         <div class="row">
-          <div class="col-lg-6">
-            <h2 class="text-light text-center">Sobre mí</h2>
+          <div class="col-lg-6 py-5">
+            <h2 class="text-light text-center ">Sobre mí</h2>
             <h3 class="text-light">Hola soy</h3>
-            <h3 class="name">Willian Zape</h3>
-            <p class="text-light">
+            <h3 class="text-light name">Willian Zape</h3>
+            <p class="font-italic text-light">
               Soy un desarrollador web apasionado por crear soluciones digitales
               que satisfagan las necesidades de los usuarios. Me encanta
               trabajar en equipo y aprender cosas nuevas todos los días.
             </p>
+            <a href="https://drive.google.com/file/d/1Y4uu1ZC_xny1uWWTQmMEjYZwLf1JmQ_o/view?usp=sharing" target="_blank" download="Mi_CV.pdf" class="btn btn-outline-info">Descarga mi CV</a>
+            <hr style="color: rgb(246, 246, 246);"> 
+            <br>
+            <h2 class="text-light">Redes Sociales</h2>
+            
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/williamalexander.sapegaldamez"
+                target="_blank"
+                class="social-icon"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/itz_awet/" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://github.com/SrAwet" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/in/willian-zape-b52b90277/" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
           </div>
           <div class="col-lg-6">
-            <img src="imgs/Yo.jpeg" alt="Foto de perfil" class="img-fluid" />
+            <img src="imgs/ElAwe.jpg" alt="Foto de perfil" class="img-fluid"/>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="portfolio">
+      <div class="contenido-seccion">
+          <h2>Mis Proyectos</h2>
+          <div class="galeria">
+              <div class="proyecto">
+                  <a class="link" href="https://github.com/SrAwet/Portafolio" target="_blank">
+                  <img src="imgs/Proyecto1.png" alt="Proyecto Portafolio">
+                  <div class="overlay">
+                  
+                      <h3>Mi Portafolio</h3>
+                      <p>Proyecto de portafolio</p>
+                  </div>
+                  </a>
+              </div>
+              <div class="proyecto">
+                <a class="link" href="https://github.com/SrAwet/EjerciciosConReact" target="_blank">
+                  <img src="imgs/Proyecto2.png" alt="Proyecto Ejercicios" >
+                  <div class="overlay">
+                      <h3>Ejercicios con React</h3>
+                      <p>Pequeña pagina simple con ejercicios con react.</p>
+                  </div>
+                </a>
+              </div>
+          </div>
+      </div>
+  </section>
 
     <!-- Habilidades -->
     <section id="habilidades">
@@ -142,7 +194,7 @@
 
     <!-- Formacion academica -->
     <section id="formacion" class="text-light">
-      <div class="container py-5">
+      <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2
@@ -196,33 +248,7 @@
       </div>
     </section>
 
-    <!-- Sección de Proyectos -->
-    <section id="proyectos" class="portfolio">
-      <div class="contenido-seccion">
-          <h2>Mis Proyectos</h2>
-          <div class="galeria">
-              <div class="proyecto">
-                  <a class="link" href="https://github.com/SrAwet/Portafolio">
-                  <img src="imgs/Proyecto1.png" alt="Proyecto Portafolio">
-                  <div class="overlay">
-                  
-                      <h3>Mi Portafolio</h3>
-                      <p>Proyecto de portafolio</p>
-                  </div>
-                  </a>
-              </div>
-              <div class="proyecto">
-                <a class="link" href="https://github.com/SrAwet/EjerciciosConReact">
-                  <img src="imgs/Proyecto2.png" alt="Proyecto Ejercicios" >
-                  <div class="overlay">
-                      <h3>Ejercicios con React</h3>
-                      <p>Pequeña pagina simple con ejercicios con react.</p>
-                  </div>
-                </a>
-              </div>
-          </div>
-      </div>
-  </section>
+
 
     <!-- Pie de página -->
     <footer class="bg-dark text-white py-3">
@@ -232,17 +258,18 @@
       <div class="social-icons">
         <a
           href="https://www.facebook.com/williamalexander.sapegaldamez"
+          target="_blank"
           class="social-icon"
         >
           <i class="fab fa-facebook"></i>
         </a>
-        <a href="https://www.instagram.com/itz_awet/" class="social-icon">
+        <a href="https://www.instagram.com/itz_awet/" target="_blank" class="social-icon">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://github.com/SrAwet" class="social-icon">
+        <a href="https://github.com/SrAwet" target="_blank" class="social-icon">
           <i class="fab fa-github"></i>
         </a>
-        <a href="https://linkedin.com/in/willian-zape-b52b90277/" class="social-icon">
+        <a href="https://linkedin.com/in/willian-zape-b52b90277/" target="_blank" class="social-icon">
           <i class="fab fa-linkedin"></i>
         </a>
       </div>

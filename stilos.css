@@ -50,13 +50,21 @@
 /*Fin de la seccion Bienvenida */
 
 .name {
-  color: rgb(226, 43, 80);
-  width: fit-content;
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 14ch;
+  animation: typing 4s steps(12) infinite, blink .5s infinite step-end alternate;
+  overflow: hidden;
 }
-.name:hover {
-  color: rgba(242, 255, 0, 0.956);
-  transform: scale(1.2);
-  transition: all 0.3s ease;
+
+@keyframes typing{
+  from {width: 0;}
+}
+
+@keyframes blink {
+  50% {border-color: transparent;}
 }
 
 /*Inicio Habilidades*/
@@ -122,9 +130,7 @@
 }
 
 #formaciones {
-  margin-top: 100px;
-  justify-content: center;
-  
+  margin-top: 25px;
 }
 .media{
   text-align: center;
